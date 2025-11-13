@@ -29,3 +29,77 @@
   margin-left: 184px;
   line-height: 1.24;
 }
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: url('../images/cover.jpg');
+  padding: 165px 50px 50px;
+  color: white;
+  gap: 106px;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  inset: 0;
+  z-index: 1;
+}
+
+.cover_title {
+  position: relative;
+  font-size: 100px;
+  font-weight: bold;
+  line-height: 1.15;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.cover_title-line {
+  display: block;
+  margin-bottom: 20px;
+  letter-spacing: 0.3em;
+}
+
+.cover_title-line:last-child {
+  margin-bottom: 0;
+}
+
+.cover_title-line_left {
+  text-align: left;
+}
+
+.cover_title-line_right {
+  text-align: right;
+}
+
+.cover_title-line_center {
+  text-align: center;
+}
+
+.cover_description {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 107px;
+  z-index: 2;
+}
+
+.cover_description-text {
+  font-size: 22px;
+  line-height: 1.2;
+  word-spacing: 18px;
+  text-transform: uppercase;
+}
+
+.cover_description-button {
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 12px 32px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
