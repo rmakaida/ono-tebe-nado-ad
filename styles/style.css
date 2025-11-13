@@ -1,1 +1,31 @@
 /* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px;
+  font-size: 18px;
+}
+
+.header_links-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+}
+
+.header_link_active {
+  text-decoration: none;
+}
+
+.header_logo-image {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.header_address {
+  max-width: 235px;
+  font-style: normal;
+  margin-left: 184px;
+  line-height: 1.24;
+}
