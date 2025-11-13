@@ -14,20 +14,20 @@
       <nav class="header_menu">
         <ul class="header_links-list">
           <li class="header_links-list-item">
-            <a class="header_link header_link_active" href="#">главная</a>
+            <a class="header_link header_link_active" href="#cover">главная</a>
           </li>
           <li class="header_links-list-item">
-            <a class="header_link" href="#">посмотреть лоты</a>
+            <a class="header_link" href="#lots">посмотреть лоты</a>
           </li>
           <li class="header_links-list-item">
-            <a class="header_link" href="#">об аукционе</a>
+            <a class="header_link" href="#about">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <a class="header_logo">
+      <a class="header_logo" href="#cover">
         <img
           class="header_logo-image"
-          src="images/logo-black.svg"
+          src="./images/logo-black.svg"
           alt="Оно тебе надо — логотип"
         />
       </a>
@@ -39,20 +39,20 @@
     </header>
 
     <main class="main">
-      <section class="cover">
+      <section class="cover" id="cover">
         <div class="overlay"></div>
         <h1 class="cover_title">
-          <span class="aligned-text">о<span class="letter-spacing-extended">но</span></span>
-          <span class="aligned-text aligned-text_center">теб<span class="letter-spacing-extended">е</span></span>
-          <span class="aligned-text aligned-text_right">н<span class="no-letter-spacing">адо</span></span>
+          <span class="cover__title-line cover__title-line_left">оно</span>
+          <span class="cover__title-line cover__title-line_center">тебе</span>
+          <span class="cover__title-line cover__title-line_right">надо</span>
         </h1>
         <div class="cover_description">
           <p class="cover_description-text">Аукцион вещей, в которые никто не верил</p>
-          <button class="bet-button">сделать ставку</button>
+          <button class="cover_description-button">сделать ставку</button>
         </div>
       </section>
 
-      <section class="lots">
+      <section class="lots" id="lots">
         <h2 class="lots_heading">Лоты</h2>
         <ul class="lots_card-list">
           <li class="lots_card-list-item">
@@ -63,7 +63,7 @@
                   Фильм режиссёра, который бросил киношколу
                 </h3>
                 <p class="card_text">
-                  Не просто бросил, а ушёл с первой лекции. Как он поступил на фестиваль «Оскар»?
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
                 </p>
               </article>
             </a>
@@ -73,10 +73,10 @@
               <article class="card card_type_book">
                 <div class="overlay"></div>
                 <h3 class="card_title">
-                  Книга, где нет ни одной буквы
+                  Книга, где описан один скучный день из жизни<br><b>РЕКЛАМНОГО АГЕНТА</b>
                 </h3>
                 <p class="card_text">
-                  Ни одной буквы — но смысл прочитывается. Как это возможно?
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
                 </p>
               </article>
             </a>
@@ -86,10 +86,11 @@
               <article class="card card_type_picture">
                 <div class="overlay"></div>
                 <h3 class="card_title">
-                  Картина из чёрного квадрата
+                  КАРТИНА, КОТОРУЮ ПОВТОРИТ ДАЖЕ 5-ЛЕТНИЙ СЫН МАМИНОЙ ПОДРУГИ
                 </h3>
                 <p class="card_text">
-                  И снова Малевич? Нет, теперь это NFT. Что стало с автором?
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
+                </p>
                 </p>
               </article>
             </a>
@@ -99,16 +100,16 @@
       </section>
 
       <section class="about">
-        <div class="about_column about_logo">
+        <div class="about_logo">
           <div class="about_logo-circle">
             <img
               class="about_logo-image"
-              src="images/logo-white.svg"
+              src="./images/logo-white.svg"
               alt="Белый логотип"
             />
           </div>
         </div>
-        <div class="about_column about_content">
+        <div class="about_content">
           <h2 class="about_title">Об аукционе</h2>
           <div class="about_text">
             <p>
@@ -146,17 +147,17 @@
       <ul class="footer_social-list">
         <li class="footer_social-list-item">
           <a class="footer_social-link" href="#">
-            <img class="footer_social-icon" src="images/vk.svg" alt="VK" />
+            <img class="footer_social-icon" src="./images/vk.svg" alt="VK" width="48" height="48"/>
           </a>
         </li>
         <li class="footer_social-list-item">
           <a class="footer_social-link" href="#">
-            <img class="footer_social-icon" src="images/pinterest.svg" alt="Pinterest" />
+            <img class="footer_social-icon" src="./images/pinterest.svg" alt="Pinterest" width="48" height="48"/>
           </a>
         </li>
         <li class="footer_social-list-item">
           <a class="footer_social-link" href="#">
-            <img class="footer_social-icon" src="images/yt.svg" alt="YouTube" />
+            <img class="footer_social-icon" src="./images/yt.svg" alt="YouTube" width="48" height="48"/>
           </a>
         </li>
       </ul>
