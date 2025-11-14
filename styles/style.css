@@ -40,6 +40,9 @@
   display: flex;
   flex-direction: column;
   background: url('../images/cover.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 165px 50px 50px;
   color: white;
   gap: 106px;
@@ -234,4 +237,41 @@
   gap: 24px;
   font-size: 20px;
   margin-top: 100px;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 50px 82px;
+  font-size: 18px;
+}
+
+.footer_address {
+  display: flex;
+  font-style: normal;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 264px;
+  text-underline-offset: 3px;
+}
+
+.footer_menu-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1px;
+  list-style: none;
+  padding-right: 20px;
+}
+
+.footer_menu-link_active {
+  text-decoration: none;
+}
+
+.footer_social-list {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  list-style: none;
 }
